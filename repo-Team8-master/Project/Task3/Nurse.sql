@@ -1,0 +1,4 @@
+CREATE TABLE C4707F21U8.Nurse (
+  NurseId INT PRIMARY KEY,
+  FOREIGN KEY (NurseId) REFERENCES Employee (EmployeeId)
+);

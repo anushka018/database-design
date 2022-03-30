@@ -1,0 +1,8 @@
+CREATE TABLE C4707F21U8.Insured (
+  PatientId INT PRIMARY KEY,
+  IId INT NOT NULL,
+  CCardNum VARCHAR (50) NOT NULL,
+  FOREIGN KEY (PatientId) REFERENCES Patient(PatientId),
+  FOREIGN KEY (IId) REFERENCES InsuranceCard(Id),
+  FOREIGN KEY (CCardNum) REFERENCES CreditCard(CardNum)
+);

@@ -1,0 +1,12 @@
+CREATE TABLE C4707F21U8.Patient (
+  PatientId INT PRIMARY KEY,
+  FirstName VARCHAR (50) NOT NULL,
+  LastName VARCHAR (50) NOT NULL,
+  Street VARCHAR (50) NOT NULL,
+  City VARCHAR (50) NOT NULL,
+  State VARCHAR (50) NOT NULL,
+  ZipCode INT NOT NULL,
+  DateOfBirth DATE,
+  IEmployeeId INT NOT NULL,
+  FOREIGN KEY (IEmployeeId) REFERENCES IntakeClerk(EmployeeId)
+);

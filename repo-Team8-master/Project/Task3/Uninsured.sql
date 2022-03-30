@@ -1,0 +1,6 @@
+CREATE TABLE C4707F21U8.Uninsured (
+  PatientId INT PRIMARY KEY,
+  CCardNum VARCHAR(50) NOT NULL,
+  FOREIGN KEY (PatientId) REFERENCES Patient(PatientId),
+  FOREIGN KEY (CCardNum) REFERENCES CreditCard(CardNum),
+);

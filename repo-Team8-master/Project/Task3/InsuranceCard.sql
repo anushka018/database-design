@@ -1,0 +1,7 @@
+CREATE TABLE C4707F21U8.InsuranceCard (
+  Id INT NOT NULL,
+  CompanyName VARCHAR (50) NOT NULL,
+  PRIMARY KEY (Id, CompanyName),
+  GroupNo VARCHAR (50) NOT NULL,
+  PayerId VARCHAR (50) NOT NULL
+);

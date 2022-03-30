@@ -1,0 +1,9 @@
+CREATE TABLE C4707F21U8.Orders (
+  PatientId INT,
+  ICD10PCS VARCHAR (50),
+  DoctorId INT,
+  PRIMARY KEY (PatientId, ICD10PCS, DoctorId),
+  FOREIGN KEY (PatientId) REFERENCES Patient(PatientId),
+  FOREIGN KEY (ICD10PCS) REFERENCES Treatment(ICD10PCS),
+  FOREIGN KEY (DoctorId) REFERENCES ServiceProvider(DoctorId)
+);

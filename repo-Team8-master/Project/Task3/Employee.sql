@@ -1,0 +1,6 @@
+CREATE TABLE C4707F21U8.Employee (
+  EmployeeId INT PRIMARY KEY,
+  FirstName VARCHAR (50) NOT NULL,
+  LastName VARCHAR (50) NOT NULL,
+  ssn VARCHAR (16) NOT NULL
+);
