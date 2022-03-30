@@ -1,5 +1,5 @@
 # database-design
-Database deisgn project for my practice of DB course 
+MySQL database deisgn project for my practice of DB course 
 ## Components
 1. ER diagram of database design
 2. Mapping of ER diagram into relations
